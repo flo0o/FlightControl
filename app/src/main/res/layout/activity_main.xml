@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/Speed"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="16dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Channel2" />
+
+    <SeekBar
+        android:id="@+id/Channel1"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="320dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="100dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDown" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="11dp"
+        android:text="Enter IP Adress"
+        app:layout_constraintBottom_toTopOf="@+id/ipAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/ipAddress"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="192.168.0.87,21346"
+        app:layout_constraintBottom_toTopOf="@+id/btnUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUp"
+        android:layout_width="88dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="8dp"
+        android:text="UP"
+        app:layout_constraintBottom_toTopOf="@+id/btnDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ipAddress" />
+
+    <Button
+        android:id="@+id/btnDown"
+        android:layout_width="90dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginBottom="90dp"
+        android:text="DOWN"
+        app:layout_constraintBottom_toTopOf="@+id/Speed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUp" />
+
+    <SeekBar
+        android:id="@+id/Channel2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="32dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDown" />
+
+</android.support.constraint.ConstraintLayout>
